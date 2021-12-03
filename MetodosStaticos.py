@@ -94,6 +94,7 @@ def altaTormenta(listaBoya,listaTormentas):
     i=1
     for boya in listaBoya:
         print(str(i)+"-"+"id:"+boya.id+" ubicacion: "+str(boya.ubicacion)+" Mar: "+boya.mar+" Oceano: "+boya.oceano)
+        i+=1
     try:
         seleccion=int(input("Ingrese el Numero de la boya: "))
         if seleccion<=len(listaBoya):
@@ -111,7 +112,7 @@ def altaTormenta(listaBoya,listaTormentas):
                     ciudadesAfect=[]
                     aux=10
                     while aux!=0:
-                        ciudad=input("Agregue Una ciudad. Indique 0 para finalizar la ciudad")
+                        ciudad=input("Agregue Una ciudad. Indique 0 para finalizar la ciudad: ")
                         if(ciudad=="0"):
                             aux=0
                         else:
